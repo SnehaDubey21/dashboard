@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+
+}
+
+.welcome {
+    margin-left: 10px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.notification-button, .toggle-dark-mode {
+    margin-left: 10px;
+}
+
+.notification-content {
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.notification-content.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.notification-content p {
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-item {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    border-radius: 6px;
+}
+
+.total-seminars {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.upcoming-seminars {
+    background-color: #007bff;
+    color: white;
+}
+
+.students-attended {
+    background-color: #35c9dc;
+    color: white;
+}
+
+.seminar-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.seminar {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    display: none;
+    color: green;
+    margin-top: 10px;
+}
+
+
+

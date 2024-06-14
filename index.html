@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <div class="header">
+        <div class="left-header">
+            <div class="logo">
+                <img src="fig.png" width="1100" height="100">
+            </div>
+        
+        
+        </div>
+        <div class="right-header">
+            <button class="notification-button">Notifications🔔</button>
+            <button class="toggle-dark-mode">Toggle☀️/🌙</button>
+            
+            
+
+            
+
+        </div>
+        
+    </div>
+    <div class="notification-content" id="notificationContent">
+        <p>🔸We are excited to invite you to attend our upcoming seminar on [Data Science]</p>
+        <p>🔸seminar on Cybersecurity has been rescheduled to [20-06-2024]</p>
+        <p>🔸We are thrilled to announce the speaker for our upcoming AI seminar. Join us to hear from Andrew Ng - Co-founder of Google Brain, former Chief Scientist at Baidu, and an advocate for AI education through platforms like Coursera.</p>
+    </div>
+    <div class="stats">
+        <div class="stat-item total-seminars">
+            Total Seminars: 8
+        </div>
+        <div class="stat-item upcoming-seminars">
+            Upcoming Seminars: 5
+        </div>
+        <div class="stat-item students-attended">
+            Students Attended: 300+
+        </div>
+    </div>
+    <div class="seminar-details">
+        <div class="seminar">
+            <h2>WebDevelopment</h2>
+            <img src="web-development1.png" alt="Seminar 1 Image" width="500" height="300">
+            <P>Date:20-06-2024</P>
+            <p>Time: 10:00 AM</p>
+            <p>Venue: Roomno:111,1st floor,VPPCOE,Sion</p>
+            <p>Description: Discover the latest trends and techniques in web development at our upcoming seminar. This event is designed for professionals and enthusiasts alike, aiming to delve into topics such as responsive design, frontend frameworks like React and Angular, backend technologies including Node.js and Python/Django, and best practices in web security and optimization. Join industry experts as they share insights and practical tips to enhance your web development skills. Whether you're looking to stay current with industry standards or expand your knowledge base, this seminar promises to be a valuable experience. Don't miss out—mark your calendar for 20-06-2024 at 10:00am at Vppcoe, secure your spot! </p>
+            <button class="register-button" onclick="registerForSeminar()">Register</button>
+        </div>
+        <div class="seminar">
+            <h2>Seminar on AI</h2>
+            <img src="AI.png" alt="Seminar 2 Image" width="500" height="300">
+            <P>Date:22-06-2024</P>
+            <p>Time: 12:00 PM</p>
+            <p>Venue: Seminar hall,2nd floor,VPPCOE,Sion</p>
+            <p>Description: Delve into the transformative world of Artificial Intelligence (AI) at our upcoming seminar. This event will explore the latest advancements and applications of AI across various industries, including machine learning algorithms, natural language processing, computer vision, and robotics. Join us for insightful discussions led by industry experts who will address the ethical implications, future trends, and practical implementations of AI technology. Whether you're a seasoned professional, researcher, or enthusiast, this seminar offers a unique opportunity to deepen your understanding and network with peers in the AI community. Save the date for 22-06-2024 at 12:00pm at vppcoe and secure your place soon.</p>
+            <button class="register-button" onclick="registerForSeminar()">Register</button>
+        </div>
+        <div class="seminar">
+            <h2>Seminar on Cybersecurity</h2>
+            <img src="cs.jpeg" alt="Seminar 3 Image" width="500" height="300">
+            <P>Date:15-07-2024</P>
+            <p>Time: 2:00 PM</p>
+            <p>Venue: lab:109,1stfloor,Vppcoe,Sion</p>
+            <p>Description: Explore the critical landscape of cybersecurity at our upcoming seminar. This event is tailored for professionals and enthusiasts seeking to deepen their understanding of current threats, preventive measures, and emerging technologies in cybersecurity. Topics will encompass network security, encryption methods, threat intelligence, incident response strategies, and regulatory compliance. Join industry leaders and experts as they share practical insights, best practices, and case studies to fortify your organization's defenses against cyber threats. Whether you're in IT, risk management, or simply curious about protecting digital assets, this seminar offers invaluable knowledge and networking opportunities.</p>
+            <button class="register-button" onclick="registerForSeminar()">Register</button>
+        </div>
+        <div class="seminar">
+            <h2>Seminar on Cloud Computing</h2>
+            <img src="cd.jpeg" alt="Seminar 4 Image" width="500" height="300">
+            <P>Date:29-06-2024</P>
+            <p>Time: 12:00 PM</p>
+            <p>Venue: Room 104,1stfloor,Vppcoe,Sion</p>
+            <p>Description: Discover the transformative potential of cloud computing at our upcoming seminar. This event is designed for professionals across industries who are keen to explore the latest trends, innovations, and best practices in cloud technology. Topics will include cloud architecture, deployment models (public, private, hybrid), security considerations, scalability, cost management, and the integration of cloud services with existing IT infrastructures. Join us for insightful discussions led by industry experts as they share real-world case studies and strategies to leverage cloud solutions effectively. Whether you're an IT leader, developer, or business executive, this seminar offers a valuable opportunity to enhance your knowledge and network with peers.</p>
+            <button class="register-button" onclick="registerForSeminar()">Register</button>
+        </div>
+        <div class="seminar">
+            <h2>Seminar on Data-Science</h2>
+            <img src="Data-Science-focuses-on-algorithms.jpg" alt="Seminar 5 Image" width="500" height="300">
+            <P>Date:1-07-2024</P>
+            <p>Time: 6:00 PM</p>
+            <p>Venue: Room 105,1stfloor,Vppcoe,Sion</p>
+            <p>Description:
+                Delve into the dynamic field of data science at our upcoming seminar. This event caters to professionals and enthusiasts interested in harnessing the power of data to drive insights and innovation. Topics will encompass data analysis techniques, machine learning algorithms, predictive modeling, big data frameworks, and the ethical implications of data-driven decision-making. Join us for engaging presentations by industry experts who will share practical applications, case studies, and emerging trends in data science. Whether you're a data scientist, analyst, or business leader looking to leverage data for competitive advantage, this seminar offers valuable learning opportunities and networking prospects </p>
+            <button class="register-button" onclick="registerForSeminar()">Register</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
